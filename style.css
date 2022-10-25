@@ -1,19 +1,45 @@
 /* CSS edit- video, fonts, content */
 * {
   margin: 0;
-  padding: 0;
+  position: relative;
+  padding: 80;
   box-sizing: border-box;
-}
+} 
 body {
-  min-height: 100vh;
-  display: grid;
-  place-items: center;
+  min-height: 60vh;
   background: slategray
 }
+h1 {
+text-align: center;
+margin-top: 4px;
+}
+
+#contactWrapper {
+  position: static;
+  font-family:Arial, Helvetica, sans-serif;
+   overflow:hidden;
+   display:inline-block;
+   width: 40px;
+
+  }
+tr {
+display:grid;
+}
+i {
+  padding: 3ex;
+  text-align: left;
+  display: flex;
+}
 .slide-menu {
+  width: 300px;
+  right: 0px;
+  padding: 10px;
+  position: absolute;
+  margin-block: 20px;
   width: 80%;
-  height: 650px;
-  position: relative;
+  height: 550px;
+  float: right;
+  /* position:relative; */
   overflow: hidden;
   border-radius: 5px;
 }
@@ -57,7 +83,7 @@ label:hover {
 .slide {
   position: absolute;
   top: 0;
-  left: 0;
+  left: 0; 
   z-index: -1;
   transform: translateY(-100%);
   background-position: center;
@@ -92,6 +118,3 @@ input:checked + label + .slide {
 /* .slide5 {
   background-color: bisque;
 } */
-#contactInfo {
-  font-family:Arial, Helvetica, sans-serif 
-}
