@@ -8,22 +8,43 @@
     <link rel="stylesheet" href="./style.css">
     <script src="https://kit.fontawesome.com/a8de020a44.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lato:wght@100&family=Sofia&display=swap" rel="stylesheet"> 
+
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <link rel="stylesheet" type="text/css" href="./style.css" />
+    <script type="module" src="./index.js"></script>
+
+    <script src="https://unpkg.com/@googlemaps/js-api-loader@1.0.0/dist/index.min.js"></script>
 </head>
 <body>
     <h1>Slow Life Concept Cafe</h1>
+    <h2>Concept Cafe Combining Creativity with Conscientious Living</h2>
     <div class="contactWrapper">  
         <table>
             <tr>
               <td><a href="https://twitter.com/loveSlowLife" target="_blank"><i class="fa-brands fa-twitter fa-2x"></i></a></td>
               <td><a href="https://www.facebook.com/slowlifesouthafrica" target="_blank"><i class="fa-brands fa-facebook-f fa-2x"></i></a></td>
               <td><a href="https://www.instagram.com/slowlifesouthafrica/" target="_blank"><i class="fa-brands fa-instagram fa-2x"></a></i></td>
+              <td><h3>Coffee</h3></td>
+              <td><h3>Music</h3></td>
+              <td><h3>Art</h3></td>
+              <td><h3>Film</h3></td>
+              <td><h3>Philosophy</h3></td>
+              <td><h3>Meditation</h3></td>
+              <td><h3><a href="mailto: slowlifesouthafrica@gmail.com">Subscribe</a></h3></td>
+              <td><h3><a href="mailto: slowlifesouthafrica@gmail.com">Send us an Email</a></h3></td>
+              <td><div id="map">Location</div></td>
+             
             </tr>
         </table>
        
 
         
         <!-- <p>Concept Cafe Combining Creativity with Conscientious Living</p>
-        <p>Food, Coffee, Music, Art, Film, Philosophy, Meditation.</p>
         <p>Subscribe To Our Newsletter!</p>
         <p>152 Main Road, Muizenberg | +27 21 788 5849 | slowlifesouthafrica@gmail.com</p> -->
     </div>
@@ -47,6 +68,20 @@
         <div class="slide slide4"></div>
  
     </div>
+
+    <script>
+        function myMap() {
+        var mapProp= {
+          center:new google.maps.LatLng(51.508742,-0.120850),
+          zoom:5,
+        };
+        var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+        }
+        </script>
+        <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41DRUbKWJHPxaFjMAwdrzWzbVKartNGg&callback=initMap&v=weekly"
+        defer
+      ></script>
 </body>
 </html>
 

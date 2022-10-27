@@ -7,37 +7,54 @@
 } 
 body {
   min-height: 60vh;
-  background: slategray
+  background: black
 }
 h1 {
 text-align: center;
 margin-top: 4px;
+font-family: 'Lato', sans-serif;
+font-weight: 600;
+color: #fff;
 }
 
-#contactWrapper {
+h2 {
+  font-family: 'Lato', sans-serif;
+text-align: center;
+color: #fff;
+}
+.contactWrapper {
+  margin-left: 20px;
   position: static;
-  font-family:Arial, Helvetica, sans-serif;
    overflow:hidden;
    display:inline-block;
-   width: 40px;
 
   }
 tr {
 display:grid;
+margin-top: 20px;
+font-family: 'Lato', sans-serif;
+color: #fff;
+}
+#map {
+  height: 40px;
+  /* The height is 400 pixels */
+  width: 100%;
+  /* The width is the width of the web page */
 }
 i {
-  padding: 3ex;
-  text-align: left;
+
   display: flex;
 }
 .slide-menu {
-  width: 300px;
+
+  width: 290px;
   right: 0px;
   padding: 10px;
-  position: absolute;
+ margin-right: 40px;
+  position: relative;
   margin-block: 20px;
   width: 80%;
-  height: 550px;
+  height: 480px;
   float: right;
   /* position:relative; */
   overflow: hidden;
